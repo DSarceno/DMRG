@@ -1,0 +1,84 @@
+\section{Matriz Densidad}
+
+Esta formulación matemática es equivalente al vector de estado, pero brinda una mejor descripción de lo comunmente encontrado en mecánica cuántica. El operador densidad proporciona un medio conventiente para la descripción de sistemas cuánticos cuyos estados no se conocen totalmente. Por ejemplo, suponemos que el sistema esta en uno de un conjunto de estados $\ket{\psi _i}$ con probabilidad $p_i$ ($\{ p_i ,\ket{\psi _i} \}$), entonces, el operador densidad se define como
+\begin{equation}
+	\rho = \sum _i p_i \ketbra{\psi _i} . \label{matDensidad}
+\end{equation}
+
+Ya teniendo el operador densidad, es importante estudiar la caracterización del mismo, que lo distingue matemáticamente de otros operadores. Para ello, enunciamos el \textbf{Teorema de Caracterización de Operadores Densidad}
+
+\begin{teorema}
+	Sea $\rho$ un operador densidad asociado a un \textit{ensemble} $\{ p_i, \ket{\psi _i} \}$ si y solo si satisface
+	\begin{description}
+		\item[Traza: ] $\tr{\rho} = 1$.
+		\item[Positividad: ] $\rho$ es un operador definido positivo\footnote{Una matriz Hermítica cuadrada, se dice \textbf{definida positiva} si todos sus valores propios son positivos o, de forma equivalente, si dado un vector $\ket{\phi}$, se cumple que $\expval{\phi}{\rho} > 0.$}.
+	\end{description}
+\end{teorema}
+
+Dado que la matriz es positiva, tiene una descomposición espectral
+\begin{equation}
+	\rho = \sum _j \lambda j \ketbra{j}. \label{desEspectral}
+\end{equation}
+
+
+\subsection{Postulados}
+
+Al inicio de esta sección se habló de que el operador densidad es un equivalente al vector de estado, por lo que, los postulados de la mecánica cuántica pueden ser descritos en términos de este operador densidad.
+
+\begin{description}
+	\item[Postulado 1: ] Para un sistema aislado se tiene un espacio de Hilbert (Espacio de Estado) descrito por el operador densidad.
+	\item[Postulado 2: ] La evolución de un sistema cuántico cerrado, entre los instantes $t_1$ y $t_2$, es descrita por un operador unitario $U$ que depende únicamente de $t_1$ y $t_2$, de modo que
+		$$ \rho = U\rho U^\dagger .$$
+	\item[Postulado 3: ] Para las mediciones es necesario utilizar los \textit{operadores de medición} $M_m$. La probabilidad de que $m$ ocurra es de
+		$$ p(m) = \tr{M_m ^\dagger M_m \rho}, $$
+	la cual viene dada por el teorema de probabilidad total\footnote{El teorema de probabilidad total enuncia que, para una partición $A_1,A_2 ,\ldots ,A_n$ sobre el espacio muestral y un suceso $B$ sobre el cuales se conocen las probabilidades condicionales $P(B|A_i)$, entonces, la probabilidad del suceso $B$ esta dada como $P(B) = \sum P(B|A_i) P(A_i)$.} y las probabilidades condicionales $p(m|i)$ definidas de la siguiente forma: $p(m|i) = \expval{\psi _i}{M_m ^\dagger M_m}$. El operador densidad luego de la medición 
+		$$ \rho _m = \frac{M_m \rho M_m ^\dagger}{\tr{M_m ^\dagger M_m  \rho}} . $$
+	\item[Postulado 4: ] El espacio de estado de un sistema compuesto, es el producto tensorial de los espacios de estado de los diferentes sistemas
+		$$ \rho _1 \otimes \cdots \otimes \rho _n .$$
+	
+\end{description}
+
+
+
+
+
+\subsection{Operador Densidad Reducido}
+
+El operador densidad también nos ayuda como una herramienta para describir subsistemas. Sean los subsistemas $A$ y $B$ cuyo estado esta dado por el operador densidad $\rho ^{AB}$ el operador densidad reducido para $A$ es
+\begin{equation}
+	\rho ^A = \tr _B {\rho ^{AB}} \label{matDenRed}
+\end{equation}
+donde $\tr _B$ es un mapeo de operadores conocido como la traza parcial sobre $B$ la cual está definida como
+	$$\tr _B \qty(\ketbra{a_1}{a_2} \otimes \ketbra{b_1}{b_2}) = \ketbra{a_1}{a_2} \tr \qty(\ketbra{b_1}{b_2}).$$
+Esto, también nos hace perder información del subsistema $B$, pero es una representación útil del subsistema $A$.
+
+
+
+\subsection{Descomposición de Schmidt}
+
+\begin{teorema}
+	Supongamos que $\ket{\psi}$ es un estado puro de un sistema compuesto $AB$. Existen estados ortonormales $\ket{i_A}$ para el subsistema $A$ y $\ket{i_B}$ para el subsistema $B$, tales que
+	\begin{equation}
+		\ket{\psi} = \sum _i \ketbra{i_A}{i_B},
+	\end{equation}
+	con $\lambda _i \geq 0$ y $\Sigma \lambda _i ^2 = 1$ llamados coeficientes de Schmidt.
+\end{teorema}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%
