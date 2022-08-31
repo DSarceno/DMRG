@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     68356,       1876]
-NotebookOptionsPosition[     66121,       1834]
-NotebookOutlinePosition[     66512,       1850]
-CellTagsIndexPosition[     66469,       1847]
+NotebookDataLength[     13604,        401]
+NotebookOptionsPosition[     12081,        368]
+NotebookOutlinePosition[     12472,        384]
+CellTagsIndexPosition[     12429,        381]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -62,7 +62,7 @@ Cell[BoxData[{
  CellChangeTimes->{{3.8707805711928577`*^9, 3.8707805892854013`*^9}, {
   3.8707806255977592`*^9, 3.8707806523665533`*^9}, {3.870780871689507*^9, 
   3.8707808734431467`*^9}, {3.8707815775128107`*^9, 3.870781645546886*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"c7bccc24-8c49-4ba7-83e4-d208ea85f065"],
+ CellLabel->"In[9]:=",ExpressionUUID->"c7bccc24-8c49-4ba7-83e4-d208ea85f065"],
 
 Cell[BoxData[
  TagBox[
@@ -84,10 +84,10 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.870780654503111*^9, 3.8707808773943043`*^9, 
-  3.870781882215507*^9},
+  3.870781882215507*^9, 3.87086488007274*^9},
  CellLabel->
-  "Out[10]//MatrixForm=",ExpressionUUID->"d26df40a-6b24-43e2-bf5e-\
-24b2a2956e92"],
+  "Out[9]//MatrixForm=",ExpressionUUID->"07891a5d-6e0b-413e-afb6-\
+705ed09a9be1"],
 
 Cell[BoxData[
  TagBox[
@@ -106,10 +106,10 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.870780654503111*^9, 3.8707808773943043`*^9, 
-  3.8707818822298183`*^9},
+  3.870781882215507*^9, 3.8708648800780907`*^9},
  CellLabel->
-  "Out[11]//MatrixForm=",ExpressionUUID->"e2cfdded-bc21-4019-a6e3-\
-76a5702d28a8"],
+  "Out[10]//MatrixForm=",ExpressionUUID->"ddaa2703-a5ed-4038-ae7d-\
+4f74a059c0b7"],
 
 Cell[BoxData[
  TagBox[
@@ -128,10 +128,10 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{3.870780654503111*^9, 3.8707808773943043`*^9, 
-  3.870781882234573*^9},
+  3.870781882215507*^9, 3.870864880081492*^9},
  CellLabel->
-  "Out[12]//MatrixForm=",ExpressionUUID->"b70d01f7-0dfe-4c52-88dc-\
-1298c60b0d47"]
+  "Out[11]//MatrixForm=",ExpressionUUID->"9818389c-0c44-43cb-94e8-\
+86fc81add36a"]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -141,7 +141,7 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"IdentityMatrix", "[", 
      SuperscriptBox["2", 
-      RowBox[{"i", "-", "2"}]], "]"}], ",", "Sz"}], 
+      RowBox[{"i", "-", "3"}]], "]"}], ",", "Sz"}], 
    "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Spi", "[", "i_", "]"}], ":=", 
@@ -149,7 +149,7 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"IdentityMatrix", "[", 
      SuperscriptBox["2", 
-      RowBox[{"i", "-", "2"}]], "]"}], ",", "Sp"}], 
+      RowBox[{"i", "-", "3"}]], "]"}], ",", "Sp"}], 
    "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Smi", "[", "i_", "]"}], ":=", 
@@ -157,13 +157,13 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"IdentityMatrix", "[", 
      SuperscriptBox["2", 
-      RowBox[{"i", "-", "2"}]], "]"}], ",", "Sm"}], "]"}]}]}], "Input",
+      RowBox[{"i", "-", "3"}]], "]"}], ",", "Sm"}], "]"}]}]}], "Input",
  CellChangeTimes->{{3.870780760490258*^9, 3.870780768311387*^9}, {
   3.870780819126194*^9, 3.870780826457488*^9}, {3.870780857133502*^9, 
   3.870780907131789*^9}, {3.870781370181172*^9, 3.870781371260776*^9}, {
   3.870781563090541*^9, 3.8707815711643267`*^9}, {3.8707818721591063`*^9, 
-  3.870781924275185*^9}},
- CellLabel->"In[13]:=",ExpressionUUID->"c0a21cdd-3571-4458-b9ac-73bbc3e810ef"],
+  3.870781924275185*^9}, {3.870865551038381*^9, 3.870865556721094*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"c0a21cdd-3571-4458-b9ac-73bbc3e810ef"],
 
 Cell[CellGroupData[{
 
@@ -173,23 +173,24 @@ Cell[BoxData[{
    RowBox[{"MatrixForm", "[", 
     RowBox[{"Szi", "[", "#", "]"}], "]"}], "&"}], "/@", 
   RowBox[{"{", 
-   RowBox[{"2", ",", "3"}], "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{"3", ",", "4"}], "}"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"MatrixForm", "[", 
     RowBox[{"Spi", "[", "#", "]"}], "]"}], "&"}], "/@", 
   RowBox[{"{", 
-   RowBox[{"2", ",", "3"}], "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{"3", ",", "4"}], "}"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"MatrixForm", "[", 
     RowBox[{"Smi", "[", "#", "]"}], "]"}], "&"}], "/@", 
   RowBox[{"{", 
-   RowBox[{"2", ",", "3"}], "}"}]}]}], "Input",
+   RowBox[{"3", ",", "4"}], "}"}]}]}], "Input",
  CellChangeTimes->{{3.870780910619335*^9, 3.870780913041103*^9}, {
   3.8707810126909313`*^9, 3.870781019344347*^9}, {3.870781158082065*^9, 
-  3.870781226948638*^9}, {3.870781934625153*^9, 3.870781949269063*^9}},
- CellLabel->"In[16]:=",ExpressionUUID->"c383c0c0-6cf7-425b-b2c6-d6e4c2cbc97a"],
+  3.870781226948638*^9}, {3.870781934625153*^9, 3.870781949269063*^9}, {
+  3.870865574930134*^9, 3.8708655940016537`*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"c383c0c0-6cf7-425b-b2c6-d6e4c2cbc97a"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -235,8 +236,10 @@ Cell[BoxData[
           Offset[0.2]}}], "\[NoBreak]", ")"}],
     Function[BoxForm`e$, 
      MatrixForm[BoxForm`e$]]]}], "}"}]], "Output",
- CellChangeTimes->{3.870781229701503*^9, 3.870781950554804*^9},
- CellLabel->"Out[16]=",ExpressionUUID->"9ee27eef-8218-4db2-ae36-02e64c477c6f"],
+ CellChangeTimes->{
+  3.870781229701503*^9, 3.870781950554804*^9, 3.870864884842*^9, {
+   3.870865569000174*^9, 3.870865594816793*^9}},
+ CellLabel->"Out[32]=",ExpressionUUID->"21558dd3-2bb6-48ca-a295-1bdff83850c4"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -273,8 +276,10 @@ Cell[BoxData[
           Offset[0.2]}}], "\[NoBreak]", ")"}],
     Function[BoxForm`e$, 
      MatrixForm[BoxForm`e$]]]}], "}"}]], "Output",
- CellChangeTimes->{3.870781229701503*^9, 3.8707819505624533`*^9},
- CellLabel->"Out[17]=",ExpressionUUID->"f506a1e0-b2ac-4cd6-b2aa-76d43c795a3a"],
+ CellChangeTimes->{
+  3.870781229701503*^9, 3.870781950554804*^9, 3.870864884842*^9, {
+   3.870865569000174*^9, 3.870865594827339*^9}},
+ CellLabel->"Out[33]=",ExpressionUUID->"30cd28a4-e5f2-49aa-bea7-acf67c27b3dd"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -311,20 +316,29 @@ Cell[BoxData[
           Offset[0.2]}}], "\[NoBreak]", ")"}],
     Function[BoxForm`e$, 
      MatrixForm[BoxForm`e$]]]}], "}"}]], "Output",
- CellChangeTimes->{3.870781229701503*^9, 3.870781950566986*^9},
- CellLabel->"Out[18]=",ExpressionUUID->"a9a2aae8-4a2f-4995-96c0-d69d9e135160"]
+ CellChangeTimes->{
+  3.870781229701503*^9, 3.870781950554804*^9, 3.870864884842*^9, {
+   3.870865569000174*^9, 3.870865594830662*^9}},
+ CellLabel->"Out[34]=",ExpressionUUID->"cb259ba8-743c-418d-9829-2f5c740ba64b"]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Hamiltonianos para cada lado", "Subsection",
+ CellChangeTimes->{{3.8707825169692907`*^9, 
+  3.870782536799452*^9}},ExpressionUUID->"b05f3d1b-7977-47a9-8acb-\
+7c142fbd9f5e"],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"H", "[", "i_", "]"}], ":=", 
+  RowBox[{"Hl", "[", "i_", "]"}], ":=", 
   RowBox[{"If", "[", 
    RowBox[{
-    RowBox[{"i", ">", "2"}], ",", 
+    RowBox[{"i", ">", "1"}], ",", 
     RowBox[{
      RowBox[{"KroneckerProduct", "[", 
       RowBox[{
-       RowBox[{"H", "[", 
+       RowBox[{"Hl", "[", 
         RowBox[{"i", "-", "1"}], "]"}], ",", 
        RowBox[{"IdentityMatrix", "[", "2", "]"}]}], "]"}], "+", 
      RowBox[{"KroneckerProduct", "[", 
@@ -344,1491 +358,11 @@ Cell[BoxData[
           RowBox[{"Smi", "[", 
            RowBox[{"i", "-", "1"}], "]"}], ",", "Sp"}], "]"}]}], ")"}]}]}], 
     ","}], "]"}]}]], "Input",
- CellChangeTimes->{{3.87078283780812*^9, 3.8707828644620123`*^9}, {
-  3.870783103504552*^9, 3.87078311109857*^9}, {3.870783148244975*^9, 
-  3.870783154496338*^9}, {3.870783190708044*^9, 3.8707831981459103`*^9}, {
-  3.870783320228657*^9, 3.870783393354868*^9}, {3.8707838189784803`*^9, 
-  3.870783859238945*^9}, {3.8707843774798717`*^9, 
-  3.870784404722528*^9}},ExpressionUUID->"5c491f88-77a2-4097-b1a1-\
-c250e69fa84d"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"H", "[", "3", "]"}], "//", "MatrixForm"}]], "Input",
- CellChangeTimes->{{3.870783398885846*^9, 3.870783401592401*^9}, {
-  3.87078352845957*^9, 3.8707835299130077`*^9}},
- CellLabel->"In[24]:=",ExpressionUUID->"4707f424-18ba-492a-b9a9-35a7125636c0"],
-
-Cell[BoxData[
- TemplateBox[{
-  "IdentityMatrix", "dims", 
-   "\"Dimension specification \\!\\(\\*FractionBox[\\\"1\\\", \\\"2\\\"]\\) \
-should be a positive machine integer or a pair of positive machine \
-integers.\"", 2, 24, 7, 24123577562889834045, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.8707835302351103`*^9, {3.870783844602228*^9, 3.8707838635752068`*^9}},
- CellLabel->
-  "During evaluation of \
-In[24]:=",ExpressionUUID->"7a8a100b-bbb7-4497-8aab-29b4716447c8"],
-
-Cell[BoxData[
- TemplateBox[{
-  "IdentityMatrix", "dims", 
-   "\"Dimension specification \\!\\(\\*FractionBox[\\\"1\\\", \\\"2\\\"]\\) \
-should be a positive machine integer or a pair of positive machine \
-integers.\"", 2, 24, 8, 24123577562889834045, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.8707835302351103`*^9, {3.870783844602228*^9, 3.870783863593663*^9}},
- CellLabel->
-  "During evaluation of \
-In[24]:=",ExpressionUUID->"4c6a99d4-110c-41de-b9c0-a5b4c6939a78"],
-
-Cell[BoxData[
- TemplateBox[{
-  "IdentityMatrix", "dims", 
-   "\"Dimension specification \\!\\(\\*FractionBox[\\\"1\\\", \\\"2\\\"]\\) \
-should be a positive machine integer or a pair of positive machine \
-integers.\"", 2, 24, 9, 24123577562889834045, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.8707835302351103`*^9, {3.870783844602228*^9, 3.8707838635999947`*^9}},
- CellLabel->
-  "During evaluation of \
-In[24]:=",ExpressionUUID->"76bdf596-77ec-44da-9a77-e7b21271558f"],
-
-Cell[BoxData[
- TemplateBox[{
-  "General", "stop", 
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"IdentityMatrix\\\", \
-\\\"::\\\", \\\"dims\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
-this calculation.\"", 2, 24, 10, 24123577562889834045, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.8707835302351103`*^9, {3.870783844602228*^9, 3.870783863613834*^9}},
- CellLabel->
-  "During evaluation of \
-In[24]:=",ExpressionUUID->"b79e5291-c026-4ff4-b801-7bfa652f22af"],
-
-Cell[BoxData[
- TagBox[
-  RowBox[{"(", "\[NoBreak]", GridBox[{
-     {
-      RowBox[{
-       FractionBox[
-        SuperscriptBox["\[HBar]", "2"], "4"], "+", 
-       RowBox[{"KroneckerProduct", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{"Null", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{"1", ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-          RowBox[{
-           FractionBox["1", "2"], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-               ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-            ")"}]}], "+", 
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"IdentityMatrix", "[", 
-               FractionBox["1", "2"], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{
-                  FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", 
-                  RowBox[{"-", 
-                   FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-            ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", 
-                RowBox[{"-", 
-                 FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-         ",", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"1", ",", "0"}], "}"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], 
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], 
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], 
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]},
-     {
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], 
-      RowBox[{
-       RowBox[{"-", 
-        FractionBox[
-         SuperscriptBox["\[HBar]", "2"], "4"]}], "+", 
-       RowBox[{"KroneckerProduct", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{"Null", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{"1", ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-          RowBox[{
-           FractionBox["1", "2"], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-               ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-            ")"}]}], "+", 
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"IdentityMatrix", "[", 
-               FractionBox["1", "2"], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{
-                  FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", 
-                  RowBox[{"-", 
-                   FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-            ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", 
-                RowBox[{"-", 
-                 FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-         ",", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"1", ",", "0"}], "}"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], 
-      RowBox[{
-       FractionBox[
-        SuperscriptBox["\[HBar]", "2"], "2"], "+", 
-       RowBox[{"KroneckerProduct", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{"Null", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{"1", ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-          RowBox[{
-           FractionBox["1", "2"], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-               ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-            ")"}]}], "+", 
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"IdentityMatrix", "[", 
-               FractionBox["1", "2"], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{
-                  FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", 
-                  RowBox[{"-", 
-                   FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-            ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", 
-                RowBox[{"-", 
-                 FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-         ",", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"1", ",", "0"}], "}"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], 
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]},
-     {
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], 
-      RowBox[{
-       FractionBox[
-        SuperscriptBox["\[HBar]", "2"], "2"], "+", 
-       RowBox[{"KroneckerProduct", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{"Null", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{"1", ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-          RowBox[{
-           FractionBox["1", "2"], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-               ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-            ")"}]}], "+", 
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"IdentityMatrix", "[", 
-               FractionBox["1", "2"], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{
-                  FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", 
-                  RowBox[{"-", 
-                   FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-            ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", 
-                RowBox[{"-", 
-                 FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-         ",", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"1", ",", "0"}], "}"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], 
-      RowBox[{
-       RowBox[{"-", 
-        FractionBox[
-         SuperscriptBox["\[HBar]", "2"], "4"]}], "+", 
-       RowBox[{"KroneckerProduct", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{"Null", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{"1", ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-          RowBox[{
-           FractionBox["1", "2"], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-               ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-            ")"}]}], "+", 
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"IdentityMatrix", "[", 
-               FractionBox["1", "2"], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{
-                  FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", 
-                  RowBox[{"-", 
-                   FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-            ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", 
-                RowBox[{"-", 
-                 FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-         ",", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"1", ",", "0"}], "}"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}], 
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]},
-     {
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], 
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], 
-      RowBox[{"KroneckerProduct", "[", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{"Null", ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"1", ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-         RowBox[{
-          FractionBox["1", "2"], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-              ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"KroneckerProduct", "[", 
-               RowBox[{
-                RowBox[{"IdentityMatrix", "[", 
-                 FractionBox["1", "2"], "]"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"0", ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-           ")"}]}], "+", 
-         RowBox[{"KroneckerProduct", "[", 
-          RowBox[{
-           RowBox[{"KroneckerProduct", "[", 
-            RowBox[{
-             RowBox[{"IdentityMatrix", "[", 
-              FractionBox["1", "2"], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{
-                 FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-               RowBox[{"{", 
-                RowBox[{"0", ",", 
-                 RowBox[{"-", 
-                  FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-           ",", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{
-               FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", 
-               RowBox[{"-", 
-                FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-        ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"{", 
-           RowBox[{"1", ",", "0"}], "}"}], ",", 
-          RowBox[{"{", 
-           RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], 
-      RowBox[{
-       FractionBox[
-        SuperscriptBox["\[HBar]", "2"], "4"], "+", 
-       RowBox[{"KroneckerProduct", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{"Null", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{"1", ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}], "+", 
-          RowBox[{
-           FractionBox["1", "2"], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}], 
-               ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], "+", 
-             RowBox[{"KroneckerProduct", "[", 
-              RowBox[{
-               RowBox[{"KroneckerProduct", "[", 
-                RowBox[{
-                 RowBox[{"IdentityMatrix", "[", 
-                  FractionBox["1", "2"], "]"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "\[HBar]"}], "}"}], ",", 
-                   RowBox[{"{", 
-                    RowBox[{"0", ",", "0"}], "}"}]}], "}"}]}], "]"}], ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{"0", ",", "0"}], "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"\[HBar]", ",", "0"}], "}"}]}], "}"}]}], "]"}]}], 
-            ")"}]}], "+", 
-          RowBox[{"KroneckerProduct", "[", 
-           RowBox[{
-            RowBox[{"KroneckerProduct", "[", 
-             RowBox[{
-              RowBox[{"IdentityMatrix", "[", 
-               FractionBox["1", "2"], "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{
-                  FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-                RowBox[{"{", 
-                 RowBox[{"0", ",", 
-                  RowBox[{"-", 
-                   FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}], 
-            ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{
-                FractionBox["\[HBar]", "2"], ",", "0"}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"0", ",", 
-                RowBox[{"-", 
-                 FractionBox["\[HBar]", "2"]}]}], "}"}]}], "}"}]}], "]"}]}], 
-         ",", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"{", 
-            RowBox[{"1", ",", "0"}], "}"}], ",", 
-           RowBox[{"{", 
-            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}]}
-    },
-    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
-    GridBoxSpacings->{"Columns" -> {
-        Offset[0.27999999999999997`], {
-         Offset[0.7]}, 
-        Offset[0.27999999999999997`]}, "Rows" -> {
-        Offset[0.2], {
-         Offset[0.4]}, 
-        Offset[0.2]}}], "\[NoBreak]", ")"}],
-  Function[BoxForm`e$, 
-   MatrixForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{
-  3.870783530243618*^9, {3.870783844662562*^9, 3.870783863622834*^9}},
- CellLabel->
-  "Out[24]//MatrixForm=",ExpressionUUID->"80a3d37f-3279-463d-bb51-\
-c95625d3b666"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Hamiltonianos para cada lado", "Subsection",
- CellChangeTimes->{{3.8707825169692907`*^9, 
-  3.870782536799452*^9}},ExpressionUUID->"b05f3d1b-7977-47a9-8acb-\
-7c142fbd9f5e"],
-
-Cell[BoxData["Hl"], "Input",
- CellChangeTimes->{{3.870782538800933*^9, 
-  3.870782539032123*^9}},ExpressionUUID->"4f9342c2-0331-4183-9660-\
-984deb70d095"]
+ CellChangeTimes->{{3.870782538800933*^9, 3.870782539032123*^9}, 
+   3.870863420733232*^9, {3.8708634560647717`*^9, 3.8708634985169*^9}, 
+   3.870863561063835*^9, {3.870863591382462*^9, 3.870863684595153*^9}, {
+   3.8708643659824266`*^9, 3.8708644315585938`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"4f9342c2-0331-4183-9660-984deb70d095"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -1852,30 +386,21 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 160, 3, 98, "Title",ExpressionUUID->"8ac12e33-532a-4d63-9ef1-d6fee65461a0"],
 Cell[CellGroupData[{
-Cell[765, 29, 1177, 35, 86, "Input",ExpressionUUID->"c7bccc24-8c49-4ba7-83e4-d208ea85f065"],
-Cell[1945, 66, 754, 23, 78, "Output",ExpressionUUID->"d26df40a-6b24-43e2-bf5e-24b2a2956e92"],
-Cell[2702, 91, 677, 20, 62, "Output",ExpressionUUID->"e2cfdded-bc21-4019-a6e3-76a5702d28a8"],
-Cell[3382, 113, 675, 20, 62, "Output",ExpressionUUID->"b70d01f7-0dfe-4c52-88dc-1298c60b0d47"]
+Cell[765, 29, 1176, 35, 86, "Input",ExpressionUUID->"c7bccc24-8c49-4ba7-83e4-d208ea85f065"],
+Cell[1944, 66, 774, 23, 78, "Output",ExpressionUUID->"07891a5d-6e0b-413e-afb6-705ed09a9be1"],
+Cell[2721, 91, 699, 20, 62, "Output",ExpressionUUID->"ddaa2703-a5ed-4038-ae7d-4f74a059c0b7"],
+Cell[3423, 113, 697, 20, 62, "Output",ExpressionUUID->"9818389c-0c44-43cb-94e8-86fc81add36a"]
 }, Open  ]],
-Cell[4072, 136, 1141, 29, 77, "Input",ExpressionUUID->"c0a21cdd-3571-4458-b9ac-73bbc3e810ef"],
+Cell[4135, 136, 1187, 29, 77, "Input",ExpressionUUID->"c0a21cdd-3571-4458-b9ac-73bbc3e810ef"],
 Cell[CellGroupData[{
-Cell[5238, 169, 850, 22, 71, "Input",ExpressionUUID->"c383c0c0-6cf7-425b-b2c6-d6e4c2cbc97a"],
-Cell[6091, 193, 1535, 45, 114, "Output",ExpressionUUID->"9ee27eef-8218-4db2-ae36-02e64c477c6f"],
-Cell[7629, 240, 1282, 36, 82, "Output",ExpressionUUID->"f506a1e0-b2ac-4cd6-b2aa-76d43c795a3a"],
-Cell[8914, 278, 1280, 36, 82, "Output",ExpressionUUID->"a9a2aae8-4a2f-4995-96c0-d69d9e135160"]
-}, Open  ]],
-Cell[10209, 317, 1342, 35, 112, "Input",ExpressionUUID->"5c491f88-77a2-4097-b1a1-c250e69fa84d"],
-Cell[CellGroupData[{
-Cell[11576, 356, 282, 5, 29, "Input",ExpressionUUID->"4707f424-18ba-492a-b9a9-35a7125636c0"],
-Cell[11861, 363, 501, 11, 56, "Message",ExpressionUUID->"7a8a100b-bbb7-4497-8aab-29b4716447c8"],
-Cell[12365, 376, 499, 11, 56, "Message",ExpressionUUID->"4c6a99d4-110c-41de-b9c0-a5b4c6939a78"],
-Cell[12867, 389, 501, 11, 56, "Message",ExpressionUUID->"76bdf596-77ec-44da-9a77-e7b21271558f"],
-Cell[13371, 402, 510, 11, 28, "Message",ExpressionUUID->"b79e5291-c026-4ff4-b801-7bfa652f22af"],
-Cell[13884, 415, 51837, 1402, 140, "Output",ExpressionUUID->"80a3d37f-3279-463d-bb51-c95625d3b666"]
+Cell[5347, 169, 901, 23, 71, "Input",ExpressionUUID->"c383c0c0-6cf7-425b-b2c6-d6e4c2cbc97a"],
+Cell[6251, 194, 1607, 47, 114, "Output",ExpressionUUID->"21558dd3-2bb6-48ca-a295-1bdff83850c4"],
+Cell[7861, 243, 1352, 38, 82, "Output",ExpressionUUID->"30cd28a4-e5f2-49aa-bea7-acf67c27b3dd"],
+Cell[9216, 283, 1352, 38, 82, "Output",ExpressionUUID->"cb259ba8-743c-418d-9829-2f5c740ba64b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[65758, 1822, 178, 3, 54, "Subsection",ExpressionUUID->"b05f3d1b-7977-47a9-8acb-7c142fbd9f5e"],
-Cell[65939, 1827, 154, 3, 29, "Input",ExpressionUUID->"4f9342c2-0331-4183-9660-984deb70d095"]
+Cell[10605, 326, 178, 3, 54, "Subsection",ExpressionUUID->"b05f3d1b-7977-47a9-8acb-7c142fbd9f5e"],
+Cell[10786, 331, 1267, 33, 112, "Input",ExpressionUUID->"4f9342c2-0331-4183-9660-984deb70d095"]
 }, Open  ]]
 }, Open  ]]
 }
