@@ -17,10 +17,10 @@ import sys
 
 n = int(sys.argv[1])
 
-sz = (sc.hbar /2)*np.array([[1,0],[0,-1]])
-sp = sc.hbar*np.array([[0,1],[0,0]])
+sz = (sc.hbar /2)*np.array([[1,0],[0,-1]]) # Spin projection operator in 'z'
+sp = sc.hbar*np.array([[0,1],[0,0]]) # Ladder operators
 sm = sc.hbar*np.array([[0,0],[1,0]])
-H2 = np.kron(sz,sz) + (1/2)*(np.kron(sp,sm) + np.kron(sm,sp))
+H2 = np.kron(sz,sz) + (1/2)*(np.kron(sp,sm) + np.kron(sm,sp)) # Hamiltonian for 2 particles of spin-1/2
 
 def Sz(i):
     return np.kron(np.eye(2**(i-1)),sz)
@@ -32,6 +32,7 @@ def Sm(i):
     return np.kron(np.eye(2**(i-1)),sm)
 
 def H(i):
+    # Funcion recursiva para un sistema lineal de spins 1/2
     if i > 2:
         return np.kron(H(i - 1),np.eye(2)) + np.kron(Sz(i - 1),sz) + (1/2)*( np.kron(Sp(i - 1),sm) + np.kron(Sm(i - 1),sp) )
     elif i == 2:
@@ -40,3 +41,15 @@ def H(i):
         return 1
 
 print(len(H(n)))
+
+
+####            SUPER HAMILTONIAN           ####
+# LEFT BLOCK
+
+def HL(i):
+    if i > 2:
+        return np.kron(HL(i - 1), np.eye(2)) + np.kron(Sz(i - 1), sz) + 0.5*(np.kron(Sp(i - 1), sm) + np.kron(Sm(i - 1), sm))
+    elif i == 2:
+        return H2
+    else:
+        return 1
