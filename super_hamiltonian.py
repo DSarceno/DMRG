@@ -48,8 +48,25 @@ print(len(H(n)))
 
 def HL(i):
     if i > 2:
-        return np.kron(HL(i - 1), np.eye(2)) + np.kron(Sz(i - 1), sz) + 0.5*(np.kron(Sp(i - 1), sm) + np.kron(Sm(i - 1), sm))
+        return np.kron(HL(i - 1), np.eye(2)) + np.kron(Sz(i - 1), sz) + 0.5*(np.kron(Sp(i - 1), sm) + np.kron(Sm(i - 1), sp))
     elif i == 2:
         return H2
     else:
         return 1
+
+
+# RIGHT BLOCK
+
+def HR(i): # EL input de esta función es la dimensión de la base del bloque derecho D_R
+    if i > 2:
+        return np.kron(np.eye(2), HR(i + 1)) + np.kron(sz, Sz(i + 1)) + 0.5*(np.kron(sp, Sm(i + 1)) + np.kron(sm, Sp(i + 1)))
+    elif i == 2:
+        return H2
+    else:
+        return 1
+
+
+
+# super_hamiltonian (Eq. 2.35 Strongly Correlated Systems - A. Avella, F. Mancini)
+j = 5
+H = HL(j + 1) + HR(j + 2) + Sz(j + 1) @ Sz(j + 2) + 0.5*( Sp(j + 1) @ Sm(j + 2) + Sm(j + 1) @ Sp(j + 2) )
