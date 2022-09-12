@@ -40,7 +40,7 @@ def H(i):
     else:
         return 1
 
-print(len(H(n)))
+#print(len(H(n)))
 
 
 ####            SUPER HAMILTONIAN           ####
@@ -59,7 +59,7 @@ def HL(i):
 
 def HR(i): # EL input de esta función es la dimensión de la base del bloque derecho D_R
     if i > 2:
-        return np.kron(np.eye(2), HR(i + 1)) + np.kron(sz, Sz(i + 1)) + 0.5*(np.kron(sp, Sm(i + 1)) + np.kron(sm, Sp(i + 1)))
+        return np.kron(np.eye(2), HR(i - 1)) + np.kron(sz, Sz(i - 1)) + 0.5*(np.kron(sp, Sm(i - 1)) + np.kron(sm, Sp(i - 1)))
     elif i == 2:
         return H2
     else:
@@ -68,5 +68,39 @@ def HR(i): # EL input de esta función es la dimensión de la base del bloque de
 
 
 # super_hamiltonian (Eq. 2.35 Strongly Correlated Systems - A. Avella, F. Mancini)
-j = 5
-H = HL(j + 1) + HR(j + 2) + Sz(j + 1) @ Sz(j + 2) + 0.5*( Sp(j + 1) @ Sm(j + 2) + Sm(j + 1) @ Sp(j + 2) )
+j = 4
+DL = 4
+DR = 4
+L = DL + DR
+#H = HL(j + 1) + HR(j + 2) + Sz(j + 1) @ Sz(j + 2) + 0.5*( Sp(j + 1) @ Sm(j + 2) + Sm(j + 1) @ Sp(j + 2) )
+
+'''
+H = np.kron(HL(j + 1), np.eye(DR*2)) + np.kron(np.eye(DL*2),HR(j + 2)) + \
+    np.kron(np.kron(np.kron(np.eye(DL),sz),sz),np.eye(DR)) + \
+    0.5*np.kron(np.kron(np.kron(np.eye(DL),sp),sm),np.eye(DR)) + \
+    0.5*np.kron(np.kron(np.kron(np.eye(DL),sm),sp),np.eye(DR))
+'''
+#print(H)
+
+#H = HL(j + 1) + HR(L - j - 2) + Sz(j + 1) @ Sz(L - j - 2) + 0.5*( Sp(j + 1) @ Sm(L - j - 2) + Sm(j + 1) @ Sp(L - j - 2) )
+
+
+print(len(HL(j + 1)))
+print(len(HR(j + 2)))
+print(len(Sz(j + 1)))
+print(len(Sz(j + 2)))
+'''
+print(len(Sz(j + 1) @ Sz(j + 2)))
+print(len(0.5*( Sp(j + 1) @ Sm(j + 2) + Sm(j + 1) @ Sp(j + 2) )))
+'''
+print(H)
+
+
+
+
+
+
+
+
+
+##
