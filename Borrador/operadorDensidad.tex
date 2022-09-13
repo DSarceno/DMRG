@@ -1,13 +1,14 @@
 \section{Matriz Densidad}
+\janote{Para introducir a la matriz de densidad sugiero que comencés con un ejemplo concreto, por ejemplo polarización de la luz. Mi idea es que elaborés el ejemplo de tal forma que se evidencie un caso en el que el formalismo de la matriz de densidad es más conveniente. Podés agregar una figurita, así también hacés más agradable la lectura}
 
-Esta formulación matemática es equivalente al vector de estado, pero brinda una mejor descripción de lo comunmente encontrado en mecánica cuántica. El operador densidad proporciona un medio conventiente para la descripción de sistemas cuánticos cuyos estados no se conocen totalmente. Por ejemplo, suponemos que el sistema esta en uno de un conjunto de estados $\ket{\psi _i}$ con probabilidad $p_i$ ($\{ p_i ,\ket{\psi _i} \}$), entonces, el operador densidad se define como
+Esta formulación matemática es equivalente al vector de estado, pero brinda una mejor\janote{mejor en qué casos? Decir que es mejor es controversial, sólo es una formulación alternativa} descripción de lo comunmente encontrado en mecánica cuántica. El operador densidad proporciona un \sout{medio}\janote{marco teórico} conventiente para la descripción de sistemas cuánticos cuyos estados no se conocen \janote{estadísticamente con certeza}\sout{totalmente}. Por ejemplo, suponemos que el sistema esta\janote{está} en uno de un conjunto de estados $\ket{\psi _i}$ con probabilidad $p_i$ ($\{ p_i ,\ket{\psi _i} \}$), entonces, el operador densidad se define como
 \begin{equation}
 	\rho = \sum _i p_i \ketbra{\psi _i} . \label{matDensidad}
 \end{equation}
 
-Ya teniendo el operador densidad, es importante estudiar la caracterización del mismo, que lo distingue matemáticamente de otros operadores. Para ello, enunciamos el \textbf{Teorema de Caracterización de Operadores Densidad}
+Ya teniendo el operador densidad, es importante\janote{por qué es importante?} estudiar la caracterización del mismo, que lo distingue matemáticamente de otros operadores. Para ello, enunciamos el \textbf{Teorema de Caracterización de Operadores Densidad}
 
-\begin{teorema}
+\begin{teorema}\janote{para el informe te toca escribir la prueba de esto}
 	Sea $\rho$ un operador densidad asociado a un \textit{ensemble} $\{ p_i, \ket{\psi _i} \}$ si y solo si satisface
 	\begin{description}
 		\item[Traza: ] $\tr{\rho} = 1$.
@@ -26,15 +27,15 @@ Dado que la matriz es positiva, tiene una descomposición espectral
 Al inicio de esta sección se habló de que el operador densidad es un equivalente al vector de estado, por lo que, los postulados de la mecánica cuántica pueden ser descritos en términos de este operador densidad.
 
 \begin{description}
-	\item[Postulado 1: ] Para un sistema aislado se tiene un espacio de Hilbert (Espacio de Estado) descrito por el operador densidad.
+	\item[Postulado 1: ] Para un sistema aislado se tiene un espacio de Hilbert (Espacio de Estado) descrito por el operador densidad. \janote{??? volvé a leer el postulado 1 porque esto suena muy raro}
 	\item[Postulado 2: ] La evolución de un sistema cuántico cerrado, entre los instantes $t_1$ y $t_2$, es descrita por un operador unitario $U$ que depende únicamente de $t_1$ y $t_2$, de modo que
-		$$ \rho = U\rho U^\dagger .$$
+		$$ \rho = U\rho U^\dagger .$$\janote{en la expresión hace falta explícita la dependencia de $t_{1,2}$}
 	\item[Postulado 3: ] Para las mediciones es necesario utilizar los \textit{operadores de medición} $M_m$. La probabilidad de que $m$ ocurra es de
 		$$ p(m) = \tr{M_m ^\dagger M_m \rho}, $$
-	la cual viene dada por el teorema de probabilidad total\footnote{El teorema de probabilidad total enuncia que, para una partición $A_1,A_2 ,\ldots ,A_n$ sobre el espacio muestral y un suceso $B$ sobre el cuales se conocen las probabilidades condicionales $P(B|A_i)$, entonces, la probabilidad del suceso $B$ esta dada como $P(B) = \sum P(B|A_i) P(A_i)$.} y las probabilidades condicionales $p(m|i)$ definidas de la siguiente forma: $p(m|i) = \expval{\psi _i}{M_m ^\dagger M_m}$. El operador densidad luego de la medición 
+	la cual viene dada por el teorema de probabilidad total\footnote{El teorema de probabilidad total enuncia que, para una partición $A_1,A_2 ,\ldots ,A_n$ sobre el espacio muestral y un suceso $B$ sobre el cuales se conocen las probabilidades condicionales $P(B|A_i)$, entonces, la probabilidad del suceso $B$ esta dada como $P(B) = \sum P(B|A_i) P(A_i)$.} y las probabilidades condicionales $p(m|i)$ definidas de la siguiente forma: $p(m|i) = \expval{\psi _i}{M_m ^\dagger M_m}$. El operador densidad luego de la medición es
 		$$ \rho _m = \frac{M_m \rho M_m ^\dagger}{\tr{M_m ^\dagger M_m  \rho}} . $$
 	\item[Postulado 4: ] El espacio de estado de un sistema compuesto, es el producto tensorial de los espacios de estado de los diferentes sistemas
-		$$ \rho _1 \otimes \cdots \otimes \rho _n .$$
+		$$ \rho _1 \otimes \cdots \otimes \rho _n .$$ \janote{esto también hay que reformularlo, en función del postulado 1}
 	
 \end{description}
 
@@ -43,6 +44,7 @@ Al inicio de esta sección se habló de que el operador densidad es un equivalen
 
 
 \subsection{Operador Densidad Reducido}
+\janote{para seguir la línea de lo que propuse en la sección anterior, también sugiero que comencés con un ejemplo concreto que motive la necesidad de la matriz de densida reducida. Te toca leer un poco para proponer un ejemplo} 
 
 El operador densidad también nos ayuda como una herramienta para describir subsistemas. Sean los subsistemas $A$ y $B$ cuyo estado esta dado por el operador densidad $\rho ^{AB}$ el operador densidad reducido para $A$ es
 \begin{equation}
@@ -52,10 +54,13 @@ donde $\tr _B$ es un mapeo de operadores conocido como la traza parcial sobre $B
 	$$\tr _B \qty(\ketbra{a_1}{a_2} \otimes \ketbra{b_1}{b_2}) = \ketbra{a_1}{a_2} \tr \qty(\ketbra{b_1}{b_2}).$$
 Esto, también nos hace perder información del subsistema $B$, pero es una representación útil del subsistema $A$.
 
+\janote{agregar la prueba de que la traza parcial es la única que puede definir a la matriz de densidad reducida}
+
 
 
 \subsection{Descomposición de Schmidt}
 
+\janote{igual un ejemplo. Aquí quizás va mejor después del teorema. Igual que antes, hace falta la prueba}
 \begin{teorema}
 	Supongamos que $\ket{\psi}$ es un estado puro de un sistema compuesto $AB$. Existen estados ortonormales $\ket{i_A}$ para el subsistema $A$ y $\ket{i_B}$ para el subsistema $B$, tales que
 	\begin{equation}
