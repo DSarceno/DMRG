@@ -9,7 +9,7 @@
 #	Codificado del texto: UTF8
 #	Compiladores probados: GNU gcc (Ubuntu 20.04 Linux) 9.3.0
 #	Instruciones de Ejecución: no requiere nada mas
-#	python3 super_hamiltonian.py
+#	python3 super_hamiltonian.py n
 
 #	Librerias
 import math as m
