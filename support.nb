@@ -1,0 +1,119 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3348,        109]
+NotebookOptionsPosition[      2652,         88]
+NotebookOutlinePosition[      3052,        104]
+CellTagsIndexPosition[      3009,        101]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"IdentityMatrix", "[", "4", "]"}], "//", "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.872106719658958*^9, 3.87210674578876*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"9ae51531-ede2-478b-bb2e-3aa4fd409f23"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0", "0", "0"},
+     {"0", "1", "0", "0"},
+     {"0", "0", "1", "0"},
+     {"0", "0", "0", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.872106731311554*^9, 3.8721067463890123`*^9}},
+ CellLabel->
+  "Out[2]//MatrixForm=",ExpressionUUID->"8b7b685d-19a3-4e68-8fd6-\
+81a667b3dced"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"KroneckerProduct", "[", 
+   RowBox[{
+    RowBox[{"IdentityMatrix", "[", "2", "]"}], ",", 
+    RowBox[{"IdentityMatrix", "[", "2", "]"}]}], "]"}], "//", 
+  "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.872106748084762*^9, 3.872106780905794*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"1fbb8bbc-1c62-45bf-9a23-800e7cc1397f"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0", "0", "0"},
+     {"0", "1", "0", "0"},
+     {"0", "0", "1", "0"},
+     {"0", "0", "0", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.87210678131174*^9},
+ CellLabel->
+  "Out[3]//MatrixForm=",ExpressionUUID->"1f91e06f-6e5c-4f3e-a96e-\
+9c812b852d6f"]
+}, Open  ]]
+},
+WindowSize->{606., 659.25},
+WindowMargins->{{Automatic, 238.5}, {48, Automatic}},
+FrontEndVersion->"13.0 for Linux x86 (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"142803a7-ae01-421a-ab6b-f0aeddab3c2c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 243, 4, 29, "Input",ExpressionUUID->"9ae51531-ede2-478b-bb2e-3aa4fd409f23"],
+Cell[826, 28, 719, 21, 96, "Output",ExpressionUUID->"8b7b685d-19a3-4e68-8fd6-81a667b3dced"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1582, 54, 359, 8, 51, "Input",ExpressionUUID->"1fbb8bbc-1c62-45bf-9a23-800e7cc1397f"],
+Cell[1944, 64, 692, 21, 145, "Output",ExpressionUUID->"1f91e06f-6e5c-4f3e-a96e-9c812b852d6f"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
