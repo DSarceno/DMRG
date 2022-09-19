@@ -13,6 +13,7 @@
 #	Librerias
 import math as m
 import numpy as np
+from datetime import datetime
 
 def matrix_form2(matrix, limiter='p'):
     """
@@ -52,3 +53,17 @@ def matrix_form2(matrix, limiter='p'):
         else:
             print_str += ' ⎥\n'
     print(print_str, end='\n\n')
+
+def matrix_arch(matrix, extention = '.csv'):
+    now = datetime.now()
+    name = 'Pruebas/' + str(now.year) + str(now.month) + str(now.day) + str('_') + str(now.hour) + ':' + str(now.minute) + extention
+    file = open(name, 'w')
+    for vec in matrix:
+        line = ''
+        for i in range(len(vec)):
+            if i < (len(vec) - 1):
+                line += str(vec[i]) + '\t'
+            else:
+                line += str(vec[i]) + '\n'
+        file.write(line)
+    file.close()

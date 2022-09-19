@@ -2,7 +2,7 @@
 #	super_hamiltonian.py
 #	Diego Sarceno (dsarceno68@gmail.com)
 
-#	Calculo del Super Hamiltoniano de una candena de spin-1/2
+#	Calculo del Super Hamiltoniano de una cadena de spin-1/2
 #   se utilizan las relaciones mostradas en la sección 2.4.2 del libro
 #   "Strongly Correlated Systems" - A. Avella, F. Mancini.
 
@@ -78,9 +78,9 @@ def HL(i):
 
 
 # RIGHT BLOCK
-def HR(i): # EL input de esta función es la dimensión de la base del bloque derecho D_R
+def HR(i):
     if i > 2:
-        return np.kron(np.eye(2), HR(i - 1)) + np.kron(sz, SzR(i - 1)) + 0.5*( np.kron(sp, SmR(i - 1)) + np.kron(sm, SmR(i - 1)) )
+        return np.kron(np.eye(2), HR(i - 1)) + np.kron(sz, SzR(i - 1)) + 0.5*( np.kron(sp, SmR(i - 1)) + np.kron(sm, SpR(i - 1)) )
     elif i == 2:
         return H2
     else:
@@ -96,8 +96,9 @@ SH = lambda d: np.kron(np.eye(2**d), HL(d)) + np.kron(HR(d), np.eye(2**d)) +\
     np.kron(np.kron(np.kron(np.eye(2**(d - 1)), sm), sp), np.eye(2**(d - 1))) )
 
 
-print(SH(n))
-
+#print(SH(n))
+mat.matrix_arch(SH(n))
+print(len(SH(n)))
 
 
 
